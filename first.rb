@@ -59,11 +59,28 @@ names=Array.new(20)
 puts names.size
 
 #Six Important array Methods
-
-arr=[1,2,3]
+#1.MAP method
+arr=[1,2,3,4,5,6,7,8,9,10]
 added = arr.map {|e|e+2 }
 puts "New Values : #{added}"
 sample=Array.[](1,2,3,4,5)
 puts "Element in the Third index : #{sample[3]}"
 str="str"
 puts ("Second element is  "+str)
+
+#2.SELECT
+s1=arr.select {|e|e>5 }
+puts "Elements >5 : #{s1}"
+colors=["red","green","blue"]
+cars=[{type:"porshe",color:"red"},{type:"baba",color:"pink"},{type:"cafee",color:"blue"}]
+s2=cars.select {|car|colors.include?(car[:color])}.map {|car|car[:type] }
+puts "Select Method : #{s2}"
+
+#3.REJECT
+s3=cars.reject{|car|colors.include?(car[:color])}.map{|car|car[:type]}
+puts "Reject Method : #{s3}"
+
+#4.REDUCE
+num1=[10,20,30,40,50]
+s4=num1.reduce{|sum,x|sum+x}
+puts "Reduce Method : #{s4}"
