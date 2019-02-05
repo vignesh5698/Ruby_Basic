@@ -63,3 +63,7 @@ puts names.size
 arr=[1,2,3]
 added = arr.map {|e|e+2 }
 puts "New Values : #{added}"
+sample=Array.[](1,2,3,4,5)
+puts "Element in the Third index : #{sample[3]}"
+str="str"
+puts ("Second element is  "+str)
