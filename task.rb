@@ -50,3 +50,5 @@ puts digits.reject { |i| i<5}
 res= :yes
 
 (res == 'yes')?(puts "Yes"):(puts "No")
+
+hash
