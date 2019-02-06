@@ -81,7 +81,29 @@ s3=cars.reject{|car|colors.include?(car[:color])}.map{|car|car[:type]}
 puts "Reject Method : #{s3}"
 
 #4.REDUCE
-num1=[10,20,30,40,50]
+num1=[10,12,10+15,20,30,40,50]
 s4=num1.reduce{|sum,x|sum+x}
 puts "Reduce Method : #{s4}"
 
+#####Sample Function call
+class Sample1
+  attr_accessor :rx, :ry
+  def a1
+    puts "Sample1->a1"
+    @rx=100
+  end
+
+  def rx
+    @rx
+  end
+end
+
+
+obj3=Sample1.new
+cc=obj3.rx
+puts cc
+
+
+#
+# s = { a: <..........>}
+# s = {   :a  => :a,   "a" => "a" }
