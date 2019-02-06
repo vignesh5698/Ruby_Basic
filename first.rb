@@ -12,13 +12,13 @@ BEGIN {
 
 #Class
 class First
-  def a(arg)
-    puts arg;
+  def a(arg,arg1)
+    puts arg+" "+arg1;
   end
 end
 ob1=First.new
-ob1.a("Object1")
-ob1.a("Object1 Second Call")
+ob1.a("Object1","Arg2")
+ob1.a("Object1 Second Call","args2")
 x=100
 puts "Value of x is #{x}"
 
@@ -84,3 +84,4 @@ puts "Reject Method : #{s3}"
 num1=[10,20,30,40,50]
 s4=num1.reduce{|sum,x|sum+x}
 puts "Reduce Method : #{s4}"
+
