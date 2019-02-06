@@ -18,4 +18,5 @@ module B
   end
 end
 
-name
+name = %w{sd ds ddasd  f d asd  ad ad a}
+puts name
