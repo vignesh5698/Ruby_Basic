@@ -39,7 +39,7 @@ end
 
 for element in arr
   #condition
-  if element.length>3
+  if element.length>3   #element.length<2 will go for reject method
     #do nothing
   else
     method_two(element)
