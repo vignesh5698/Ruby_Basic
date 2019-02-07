@@ -34,6 +34,10 @@ puts "Instance variables : #{s1.instance_variables}"
 class NewClass
   def defSam(method_name)
     NewClass.define_method(method_name){puts "I am from the method inside blah"}
+    NewClass.define_method(method_name) do
+      puts "helloo Vignesh"
+      puts "This is from New Block"
+    end
   end
 end
 nc=NewClass.new

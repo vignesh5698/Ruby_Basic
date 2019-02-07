@@ -101,5 +101,5 @@ end
 
 obj3=Sample1.new
 cc=obj3.rx
-puts "Sample : "+cc
+puts cc
 
