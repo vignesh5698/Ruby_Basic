@@ -51,4 +51,3 @@ res= :yes
 
 (res == 'yes')?(puts "Yes"):(puts "No")
 
-hash

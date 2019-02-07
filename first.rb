@@ -90,20 +90,16 @@ class Sample1
   attr_accessor :rx, :ry
   def a1
     puts "Sample1->a1"
-    @rx=100
+    rx=100
   end
 
-  def rx
-    @rx
-  end
+  # def rx
+  #   @rx
+  # end
 end
 
 
 obj3=Sample1.new
 cc=obj3.rx
-puts cc
+puts "Sample : "+cc
 
-
-#
-# s = { a: <..........>}
-# s = {   :a  => :a,   "a" => "a" }
