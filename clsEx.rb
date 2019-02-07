@@ -27,3 +27,15 @@ s1.display
 s.display
 
 puts s.dep+" "+s.section
+puts "Instance variables : #{s1.instance_variables}"
+
+#Passing method as args
+
+class NewClass
+  def defSam(method_name)
+    NewClass.define_method(method_name){puts "I am from the method inside blah"}
+  end
+end
+nc=NewClass.new
+nc.defSam("newMeth")
+nc.newMeth
