@@ -3,5 +3,10 @@ def method_old
 end
 eval("def method_new; 60;end ")
 x1=method_old
-x2=method_new
-puts x1+x2
+puts method_new
+puts x1+method_new
+
+#contents=Document.new('data').get_contents
+eval(File.read("data.rb"))
+include A
+puts A.A1
