@@ -1,6 +1,6 @@
 File.open("doc.txt").each do |line|
   $str= line
-  $sentence=$str.split(".")
+  $sentence=$str.split(/[;.]/)
   $sentence_length=$sentence.length
   $tot_words=0
   puts "\n\n---------------Document Analyser---------------"
